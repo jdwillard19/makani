@@ -6,6 +6,21 @@ Author: Your Name
 Author-email: your.email@example.com
 License: UNKNOWN
 Platform: UNKNOWN
-License-File: LICENSE
+Requires-Dist: cmake
+Requires-Dist: mpi4py
+Requires-Dist: h5py
+Requires-Dist: zarr
+Requires-Dist: netCDF4
+Requires-Dist: xarray
+Requires-Dist: pandas
+Requires-Dist: moviepy
+Requires-Dist: imageio
+Requires-Dist: wandb
+Requires-Dist: ruamel.yaml
+Requires-Dist: tqdm
+Requires-Dist: jsbeautifier
+Requires-Dist: numba
+Requires-Dist: xskillscore
+Requires-Dist: properscoring
 
 UNKNOWN
