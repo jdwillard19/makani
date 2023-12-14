@@ -19,16 +19,16 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.distributed as dist
 from torch.cuda.amp import custom_fwd, custom_bwd
-from utils import comm
+from makani.utils import comm
 
 # parallel helpers
-from mpu.mappings import reduce_from_parallel_region
-from mpu.mappings import scatter_to_parallel_region
-from mpu.mappings import gather_from_parallel_region
-from mpu.mappings import copy_to_parallel_region
-from mpu.helpers import _transpose
-from mpu.helpers import pad_helper
-from mpu.helpers import truncate_helper 
+from .mappings import reduce_from_parallel_region
+from .mappings import scatter_to_parallel_region
+from .mappings import gather_from_parallel_region
+from .mappings import copy_to_parallel_region
+from .helpers import _transpose
+from .helpers import pad_helper
+from .helpers import truncate_helper 
 
 
 class distributed_transpose_w(torch.autograd.Function):

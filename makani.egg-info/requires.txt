@@ -1,0 +1,16 @@
+cmake
+mpi4py
+h5py
+zarr
+netCDF4
+xarray
+pandas
+moviepy
+imageio
+wandb
+ruamel.yaml
+tqdm
+jsbeautifier
+numba
+xskillscore
+properscoring

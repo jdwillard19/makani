@@ -20,7 +20,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 from torch.utils.data.distributed import DistributedSampler
 from typing import Any
-from utils import comm
+from makani.utils import comm
 import numpy as np
 
 

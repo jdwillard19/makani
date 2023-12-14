@@ -22,25 +22,25 @@ from torch.cuda import amp
 from functools import partial
 
 # helpers
-from networks.layers import DropPath, MLP, EncoderDecoder
+from .layers import DropPath, MLP, EncoderDecoder
 
 # import global convolution and non-linear spectral layers
-from networks.spectral_convolution import SpectralConv, FactorizedSpectralConv, SpectralAttention
+from .spectral_convolution import SpectralConv, FactorizedSpectralConv, SpectralAttention
 
 # get spectral transforms from torch_harmonics
 import torch_harmonics as th
 import torch_harmonics.distributed as thd
 
 # wrap fft, to unify interface to spectral transforms
-from networks.layers import RealFFT2, InverseRealFFT2
-from mpu.layers import DistributedRealFFT2, DistributedInverseRealFFT2, DistributedMLP, DistributedEncoderDecoder
+from .layers import RealFFT2, InverseRealFFT2
+from makani.mpu.layers import DistributedRealFFT2, DistributedInverseRealFFT2, DistributedMLP, DistributedEncoderDecoder
 
 # more distributed stuff
-from utils import comm
+from makani.utils import comm
 
 # layer normalization
-from mpu.mappings import scatter_to_parallel_region, gather_from_parallel_region
-from mpu.layer_norm import DistributedInstanceNorm2d, DistributedLayerNorm
+from makani.mpu.mappings import scatter_to_parallel_region, gather_from_parallel_region
+from makani.mpu.layer_norm import DistributedInstanceNorm2d, DistributedLayerNorm
 
 
 class SpectralFilterLayer(nn.Module):

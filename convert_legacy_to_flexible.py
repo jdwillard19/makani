@@ -21,23 +21,23 @@ from functools import partial
 import pynvml
 import torch
 
-from networks.model_package import (
+from .networks.model_package import (
     _load_static_data,
     MODEL_PACKAGE_CHECKPOINT_PATH,
     save_model_package,
     LocalPackage,
 )
-from utils import logging_utils
+from .utils import logging_utils
 
 
 import torch.distributed as dist
 
-from networks.models import get_model
+from .networks.models import get_model
 
 # distributed computing stuff
-from utils import comm
-from utils.trainer import Trainer
-from utils.YParams import ParamsBase
+from .utils import comm
+from .utils.trainer import Trainer
+from .utils.YParams import ParamsBase
 
 
 class CheckpointSaver(Trainer):

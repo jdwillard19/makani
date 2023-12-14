@@ -19,7 +19,7 @@ import torch
 import torch.nn as nn
 
 # preprocessor we need too
-from networks.preprocessor import Preprocessor2D
+from .preprocessor import Preprocessor2D
 
 _supported_models = ['fno', 'sfno', 'afno', 'afno:v1', 'vit', 'debug']
 

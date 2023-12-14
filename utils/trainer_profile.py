@@ -30,23 +30,23 @@ import torch.cuda.amp as amp
 import logging
 import wandb
 
-from networks.models import get_model
-from utils.dataloader import get_dataloader
-from mpu.mappings import init_gradient_reduction_hooks
-from mpu.helpers import sync_params, gather_uneven
-from utils.losses import LossHandler
-from utils.metric import MetricsHandler
+from makani.networks.models import get_model
+from .dataloader import get_dataloader
+from makani.mpu.mappings import init_gradient_reduction_hooks
+from makani.mpu.helpers import sync_params, gather_uneven
+from .losses import LossHandler
+from .metric import MetricsHandler
 
 # distributed computing stuff
-from utils import comm
-from utils import visualize
+from . import comm
+from . import visualize
 import torch.distributed as dist
 
 # for the manipulation of state dict
 from collections import OrderedDict
 
 # for counting model parameters
-from networks.helpers import count_parameters
+from makani.networks.helpers import count_parameters
 
 # profile stuff
 from ctypes import cdll

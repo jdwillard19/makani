@@ -25,7 +25,7 @@ import math
 
 # distributed stuff
 import torch.distributed as dist
-from utils import comm
+from makani.utils import comm
 
 # DALI stuff
 from nvidia.dali.pipeline import Pipeline
@@ -34,8 +34,8 @@ import nvidia.dali.types as dali_types
 from nvidia.dali.plugin.pytorch import DALIGenericIterator, LastBatchPolicy
 
 # es helper
-import utils.dataloaders.dali_es_helper_2d as esh
-from utils.grids import GridConverter
+from . import dali_es_helper_2d as esh
+from makani.utils.grids import GridConverter
 
 
 class ERA5DaliESDataloader(object):

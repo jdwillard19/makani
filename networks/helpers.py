@@ -15,7 +15,7 @@
 
 import torch
 
-from utils import comm
+from makani.utils import comm
 import torch.distributed as dist
 
 def count_parameters(model, device):

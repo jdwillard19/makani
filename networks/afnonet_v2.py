@@ -29,8 +29,8 @@ from typing import Optional
 import math
 
 # helpers
-from networks.layers import PatchEmbed, DropPath, MLP
-from networks.activations import ComplexReLU
+from .layers import PatchEmbed, DropPath, MLP
+from .activations import ComplexReLU
 
 @torch.jit.script
 def compl_mul_add_fwd(a: torch.Tensor, b: torch.Tensor) -> torch.Tensor:

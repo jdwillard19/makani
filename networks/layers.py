@@ -30,9 +30,9 @@ from typing import Optional
 import math
 
 from torch_harmonics import *
-from networks.contractions import compl_muladd2d_fwd, compl_mul2d_fwd
-from networks.contractions import _contract_diagonal
-from networks.activations import *
+from .contractions import compl_muladd2d_fwd, compl_mul2d_fwd
+from .contractions import _contract_diagonal
+from .activations import *
 
 @torch.jit.script
 def drop_path(x: torch.Tensor, drop_prob: float = 0., training: bool = False) -> torch.Tensor:

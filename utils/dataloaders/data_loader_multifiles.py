@@ -29,7 +29,7 @@ import h5py
 import datetime
 
 # for grid conversion
-from utils.grids import GridConverter
+from makani.utils.grids import GridConverter
 
 class MultifilesDataset(Dataset):
     def __init__(self,

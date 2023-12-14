@@ -91,9 +91,9 @@ def get_file_stats(filename,
 
             # create batch
             slc_start = slc.start
-	    slc_stop = slc.stop
+    	    slc_stop = slc.stop
             for batch_start in range(slc_start, slc_stop, batch_size):
-		batch_stop = min(batch_start+batch_size, slc_stop)
+		        batch_stop = min(batch_start+batch_size, slc_stop)
                 sub_slc = slice(batch_start, batch_stop)
             
                 data = f['fields'][sub_slc, ...]

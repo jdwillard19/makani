@@ -1,0 +1,3 @@
+[console_scripts]
+makani-inference = makani.inference:main
+makani-train = makani.train:main

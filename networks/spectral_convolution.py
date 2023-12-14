@@ -27,13 +27,13 @@ tl.set_backend('pytorch')
 from tltorch.factorized_tensors.core import FactorizedTensor
 
 # import convenience functions for factorized tensors
-from utils import comm
-from networks.activations import ComplexReLU
-from networks.contractions import compl_muladd2d_fwd, compl_mul2d_fwd, _contract_rank
-from networks.factorizations import get_contract_fun
+from makani.utils import comm
+from .activations import ComplexReLU
+from .contractions import compl_muladd2d_fwd, compl_mul2d_fwd, _contract_rank
+from .factorizations import get_contract_fun
 
 # for the experimental module
-from networks.contractions import compl_exp_muladd2d_fwd, compl_exp_mul2d_fwd
+from .contractions import compl_exp_muladd2d_fwd, compl_exp_mul2d_fwd
 
 import torch_harmonics as th
 import torch_harmonics.distributed as thd

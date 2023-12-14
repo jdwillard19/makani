@@ -18,15 +18,15 @@ import numpy as np
 import argparse
 import torch
 import logging
-from utils import logging_utils
-from utils.YParams import YParams
+from .utils import logging_utils
+from .utils.YParams import YParams
 
 # distributed computing stuff
-from utils import comm
+from .utils import comm
 
 # import trainer
-from utils.parse_dataset_metada import parse_dataset_metadata
-from inference.inferencer import Inferencer 
+from .utils.parse_dataset_metada import parse_dataset_metadata
+from .inference.inferencer import Inferencer 
 
 
 if __name__ == '__main__':

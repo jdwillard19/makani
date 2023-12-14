@@ -4,12 +4,12 @@ import torch.nn.functional as F
 import torch
 import torch.nn as nn
 from functools import partial
-from networks.layers import DropPath
+from .layers import DropPath
 
 # mp stuff
-from utils import comm
-from networks.layers import MLP, PatchEmbed
-from mpu.layers import DistributedMatmul, DistributedMLP, DistributedAttention
+from makani.utils import comm
+from .layers import MLP, PatchEmbed
+from makani.mpu.layers import DistributedMatmul, DistributedMLP, DistributedAttention
 
 
 class Attention(nn.Module):

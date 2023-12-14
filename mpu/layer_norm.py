@@ -21,8 +21,8 @@ from torch.cuda import amp
 from typing import Tuple
 
 # for spatial model-parallelism
-from utils import comm
-from mpu.mappings import gather_from_parallel_region, copy_to_parallel_region
+from makani.utils import comm
+from .mappings import gather_from_parallel_region, copy_to_parallel_region
 
 class DistributedInstanceNorm2d(nn.Module):
     """

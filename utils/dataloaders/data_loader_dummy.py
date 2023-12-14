@@ -23,10 +23,10 @@ from torch import Tensor
 import math
 
 # distributed stuff
-from utils import comm
+from makani.utils import comm
 
 # for grid conversion
-from utils.grids import GridConverter
+from makani.utils.grids import GridConverter
 
 class DummyLoader(object):
     def __init__(self,

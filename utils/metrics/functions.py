@@ -14,7 +14,7 @@
 # limitations under the License.
 
 import torch
-from utils.grids import GridQuadrature
+from makani.utils.grids import GridQuadrature
 
 class GeometricL1(torch.nn.Module):
     def __init__(self, grid_type,

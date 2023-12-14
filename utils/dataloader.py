@@ -21,7 +21,7 @@ from torch.utils.data import DataLoader
 
 # distributed stuff
 import torch.distributed as dist
-from utils import comm
+from . import comm
 
 
 def init_distributed_io(params):

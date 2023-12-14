@@ -28,15 +28,15 @@ import torch.cuda.amp as amp
 import logging
 import wandb
 
-from utils.dataloader import get_dataloader
-from networks.models import get_model
-from utils.trainer import Trainer
-from utils.losses import LossHandler
-from utils.metric import MetricsHandler
+from makani.utils.dataloader import get_dataloader
+from makani.networks.models import get_model
+from makani.utils.trainer import Trainer
+from makani.utils.losses import LossHandler
+from makani.utils.metric import MetricsHandler
 
 # distributed computing stuff
-from utils import comm
-from utils import visualize
+from makani.utils import comm
+from makani.utils import visualize
 import torch.distributed as dist
 
 

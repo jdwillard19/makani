@@ -22,9 +22,9 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 
-from utils import comm
-from utils.grids import GridQuadrature
-from mpu.mappings import reduce_from_parallel_region, gather_from_parallel_region
+from . import comm
+from .grids import GridQuadrature
+from makani.mpu.mappings import reduce_from_parallel_region, gather_from_parallel_region
 
 import torch_harmonics as harmonics
 from torch_harmonics.quadrature import clenshaw_curtiss_weights, legendre_gauss_weights

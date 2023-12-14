@@ -16,7 +16,7 @@
 import os
 import time
 import logging
-from utils.logging_utils import disable_logging
+from .logging_utils import disable_logging
 import math
 import torch
 import torch.distributed as dist

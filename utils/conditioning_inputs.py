@@ -15,7 +15,7 @@
 
 import numpy as np
 import torch
-from third_party.climt.zenith_angle import cos_zenith_angle
+from makani.third_party.climt.zenith_angle import cos_zenith_angle
 import datetime
 from netCDF4 import Dataset as DS
 import h5py

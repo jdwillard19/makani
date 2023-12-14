@@ -20,9 +20,9 @@ import unittest
 from parameterized import parameterized
 import torch
 
-from networks.models import list_models, get_model
+from makani.networks.models import list_models, get_model
 
-from testutils import get_default_parameters
+from .testutils import get_default_parameters
 
 class TestModels(unittest.TestCase):
 

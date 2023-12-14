@@ -24,10 +24,10 @@ import numpy as np
 import h5py as h5
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.dataloader import get_dataloader
+from makani.utils.dataloader import get_dataloader
 
-from testutils import get_default_parameters, init_dataset
-from testutils import H5_PATH, NUM_CHANNELS, IMG_SIZE_H, IMG_SIZE_W
+from .testutils import get_default_parameters, init_dataset
+from .testutils import H5_PATH, NUM_CHANNELS, IMG_SIZE_H, IMG_SIZE_W
 
 def get_sample(path: str, idx):
     files = sorted(glob.glob(os.path.join(path, "*.h5")))

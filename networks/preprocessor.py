@@ -22,9 +22,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from utils import comm
-from utils.grids import GridConverter
-from mpu.mappings import reduce_from_parallel_region, copy_to_parallel_region
+from makani.utils import comm
+from makani.utils.grids import GridConverter
+from makani.mpu.mappings import reduce_from_parallel_region, copy_to_parallel_region
 
 class Preprocessor2D(nn.Module):
     def __init__(self, params):

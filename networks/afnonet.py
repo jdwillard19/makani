@@ -18,9 +18,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.fft
-from utils.img_utils import PeriodicPad2d
+from makani.utils.img_utils import PeriodicPad2d
 
-from networks.layers import DropPath, PatchEmbed
+from .layers import DropPath, PatchEmbed
 
 
 class Mlp(nn.Module):
